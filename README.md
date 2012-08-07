@@ -18,16 +18,16 @@ Getting started
 
 Clone the git repository
 
-`git clone https://github.com/espinaemmanuel/Felipo.git`
+	git clone https://github.com/espinaemmanuel/Felipo.git
 
 Create the logs directory
 
-`mkdir Felipo/apache-logs`
+	mkdir Felipo/apache-logs
 
 Create a site in the Apache Server
 
-`cd /etc/apache2/sites-available/`
-`gedit felipo`
+	cd /etc/apache2/sites-available/
+	gedit felipo
 
 Add the following configuration specifying the correct path for the directories
 
@@ -42,12 +42,12 @@ Add the following configuration specifying the correct path for the directories
     
 Enable the site with the following commands
 
-`sudo a2ensite felipo`
-`sudo service apache2 reload`
+	sudo a2ensite felipo
+	sudo service apache2 reload
 
 To access the new site you will need to add "felipo" to the hosts file. For example
 
-`sudo gedit /etc/hosts`
+	sudo gedit /etc/hosts
 
 And edit it so it looks like
 
