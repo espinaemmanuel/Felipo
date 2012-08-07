@@ -1,0 +1,21 @@
+{
+"name": "Login",
+"method": "post",
+"controller": "",
+"action": "login",
+"class": "form_central",
+"id": "login",
+"submitValue": "Login",
+"fields": {
+			"usuario": {
+			 			"label": "Usuario",
+			 			"constraints": {"Required": {} }	 
+			 },
+			 "password": {
+			 			"type": "password",
+			 			"label": "Password",
+			 			"constraints": {"Required": {} }	 
+			 }
+		}	
+}
+			 

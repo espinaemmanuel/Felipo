@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+#wrapperContenido {
+	width: 880px;
+	margin-left: auto;
+	margin-right: auto;
+}
+a.boton-form {
+	background-image: url(images/boton-azul.png);
+	display: block;
+	height: 22px;
+	width: 84px;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #27527A;
+	text-decoration: none;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+body {
+	background-color: #336699;
+}
+
+#contenido {
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #FFF;
+}
+
+.borde-contenido{
+	background-color: #FFF;
+	background-image: url(images/borde-cont-azul-si.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 14px;
+}
+.borde-contenido .c{
+	background-image: url(images/borde-cont-azul-sd.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.borde-contenido-inferior {
+	background-color: #FFF;
+	background-image: url(images/borde-cont-azul-ii.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+.borde-contenido-inferior .c {
+	background-image: url(images/borde-cont-azul-id.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	height: 14px;
+}
+
+#tituloContenido {
+	margin-bottom: 40px;
+}
+#formLoguin {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	background-color: #28527B;
+	width: 380px;
+	position: relative;
+	margin-top: 100px;
+	margin-bottom: 200px;
+	left: auto;
+	right: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+#tituloContenido h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #CC3300;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #28527B;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	
+}
+
+#tituloContenido h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #265279;
+	padding-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.filaForm label {
+	display:block;
+	float:left;
+	width:140px;
+	padding: 3px;
+}
+#formLoguin-content {
+	width: 300px;
+	padding: 0px 20px 0px 20px;
+	margin: auto;
+}
+.filaForm input{
+	width: 145px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: gray;
+	padding: 2px;
+}
+
+.filaForm {
+	clear: both;
+	padding: 0 0 10px;
+}
+.cuadroTexto {
+	width: 150px;
+}
+
+
+
+#cuadroError {
+	background-color: #FFFF99;
+	border: 2px solid #CC3300;
+	padding: 10px;
+	width: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #666;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#cuadroError p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#cuadroError h1 {
+	color: #CC3300;
+	font-size: 14px;
+	text-align: center;
+}
+#cuadroError h2 {
+	font-size: 12px;
+	color: #CC3300;
+	text-align: center;
+}
+
+#barraTop {
+	background-color: #1D3A58;
+	height: 25px;
+	width: 100%;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+#barraTop #imagenLogo {
+	position: absolute;
+	top: 5px;
+	left: 9px;
+}
+.bs {
+	background-color: #28527B;
+	height: 20px;
+	background-image: url(images/bsi.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.bs .c{
+	background-image: url(images/bsd.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 20px;
+}
+
+.bi {
+	background-color: #28527B;
+	height: 20px;
+	background-image: url(images/bii.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+.bi .c{
+	background-image: url(images/bid.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	height: 20px;
+}

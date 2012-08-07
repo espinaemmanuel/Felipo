@@ -1,0 +1,14 @@
+AddHandler x-httpd-php5-3 .php
+RewriteEngine on
+
+RewriteBase /
+
+RewriteCond $1 !^app
+RewriteRule ^(.*) app/$1 [NC]
+
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l
+RewriteRule ^.*$ - [NC,L]
+
+RewriteRule ^.*$ index.php [NC,L]
+
