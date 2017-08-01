@@ -44,26 +44,24 @@ The plugins are loaded selectively according to the $config ['plugins'] values i
 
 Felipo implements a very lightweight version of active record. For example to save a person in a database:
 
-{% highlight php startinline=true %}
+```php
 class Person extends ActiveRecord {}
 $person = new Person();
 $person->id = 123;
 $person->name = “Emmanuel”;
 $person->lastName = “Espina”;
 $person->save();
-{% endhighlight %}
-
+```
 This will execute in the database:
 
-{% highlight sql %}
+```sql
 INSERT INTO Person (id, name, lastName) VALUES (123, 'Emmanuel', 'Espina');
-{% endhighlight %}
-
+```
 As you can see it is very simple (in simple cases). To load the person you do:
 
-    
-    $person = Person::loadById(123);
-
+```php    
+$person = Person::loadById(123);
+```
 
 The active records go in the models directory in each module.
 
@@ -73,9 +71,9 @@ The active records go in the models directory in each module.
 
 Now that you have a Person represented as an active record you can expose it to the world with a ActiveRecordResource
 
-    
-    class Person extends ActiveRecordResource {}
-
+```php    
+class Person extends ActiveRecordResource {}
+```
 
 That goes to the resources directory. Currently for this to work you must have a corresponding active record in the models directory with the name Person_AR (I’ll fix this in the future)
 Now if you want to get the person you create a rest controller inheriting from **RestControllerGenerico**
